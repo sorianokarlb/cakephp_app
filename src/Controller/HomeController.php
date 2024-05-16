@@ -26,7 +26,7 @@ use Cake\View\Exception\MissingTemplateException;
  *
  * @link https://book.cakephp.org/3.0/en/controllers/pages-controller.html
  */
-class PagesController extends AppController
+class HomeController extends AppController
 {
 
     /**
@@ -38,7 +38,7 @@ class PagesController extends AppController
      * @throws \Cake\Http\Exception\NotFoundException When the view file could not
      *   be found or \Cake\View\Exception\MissingTemplateException in debug mode.
      */
-    public function home()
+    public function index()
     {
     // render page render('<filename>');
     // $this->render('home');

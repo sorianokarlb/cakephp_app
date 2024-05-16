@@ -53,8 +53,13 @@ Router::scope('/', function (RouteBuilder $routes) {
      * to use (in this case, src/Template/Pages/home.ctp)...
      */
 
+    // Application Root Route
     // display is the function name on your controller
-    $routes->connect('/', ['controller' => 'Pages', 'action' => 'home']);
+    $routes->connect('/', ['controller' => 'Home', 'action' => 'index']);
+
+    // User Controller Routes
+    $routes->connect('/login', ['controller' => 'Users', 'action' => 'login']);
+    $routes->connect('/registration', ['controller' => 'Users', 'action' => 'registration']);
 
     /**
      * ...and connect the rest of 'Pages' controller's URLs.
